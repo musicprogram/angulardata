@@ -1,14 +1,34 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Forum</title>
+  <title>ForumSena</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
 </head>
 <body>
+<div class="main_header clear_fix">
 
-<%= yield %>
+	<div class="wrapper">
+		<div id="logo">
+		<p>Forum Sena Red Social CFDCM</p>
+		</div>
+			
+			<div class="buttons"><%= link_to "New Post", new_post_path%></div>
+	</div>	
+</div>
 
+<div class="wrapper">
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+</div>
+
+<div class="wrapper">
+	<%= yield%>
+</div>
 </body>
 </html>
