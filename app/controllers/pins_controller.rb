@@ -3,7 +3,7 @@ class PinsController < ApplicationController
 
 
 	def index
-		
+		@pins = Pin.all.order("created_at DESC")
 	end
 
 	def show
@@ -21,6 +21,21 @@ class PinsController < ApplicationController
 		else
 			render 'new'
 		end
+	end
+
+	def edit
+		
+	end
+	def update
+		if @pin.update(pin_params)
+			redirect_to @pin, notice: "Pin was Succesfully update"
+			else
+			render 'edit'
+		end
+	end
+	def destroy
+		@pin.destroy
+		redirect_to root_path
 	end
 
 	private
