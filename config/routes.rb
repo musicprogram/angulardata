@@ -7,7 +7,13 @@ Rails.application.routes.draw do
   resources :comments
   
   end
-  resources :pins
+  resources :pins do
+  	member do
+  	put "like", to: "pins#upvote"
+  end
+end
+
+
   root 'welcome#index'
 
 end
