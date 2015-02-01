@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
 
 
  body{
@@ -37,22 +41,7 @@
 
 
 
-.main_header{
-	width: 100%;
-	margin: 0 auto;
-	background: white;
-	#logo{
-		float: left;
-		a{
-			text-transform: uppercase;
-			font-weight: 700px;
-			letter-spacing: -1px;
-			font-size: 1.2rem;
-			text-decoration: none;
-			color:#397CAC;
-		}
-	}
-}
+
 
 .buttons{
 	float: right;
@@ -67,6 +56,9 @@
   		font-weight: 100;
   	}
 }
+
+
+
 #posts{
 	background: white;
 	padding: 2em 5%;
@@ -90,6 +82,9 @@
 		}
 	}
 }
+
+
+
 .button {
 	color: #397CAC;
 	border: 1px solid #397CAC;
