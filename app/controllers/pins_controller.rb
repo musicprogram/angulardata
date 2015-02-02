@@ -4,6 +4,7 @@ class PinsController < ApplicationController
 
 
 	def index
+		@home_page = true
 		@pins = Pin.all.order("created_at DESC")
 	end
 

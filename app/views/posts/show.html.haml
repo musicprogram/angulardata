@@ -17,8 +17,10 @@
 	%hr/
 	%br/
 	
-	= link_to "Edit", edit_post_path(@post), class: "button"
-	= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure want to do this?"}, class: "button"
+	= link_to "Back", posts_path(@post), class: "button"
+//  botonones para eliminar y editar los comentarios
+//	= link_to "Edit", edit_post_path(@post), class: "button"
+//	= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure want to do this?"}, class: "button"
 	
-
+	
 	

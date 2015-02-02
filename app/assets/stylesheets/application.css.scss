@@ -196,9 +196,13 @@ h1, h2, h3, h4, h5, h6 {
 	.box {
 		margin: 10px;
 		width: 350px;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
-		border-radius: 7px;
+		box-shadow: 3px 3px 5px #0E0E0E;
 		text-align: center;
+		border-color: #252525;
+		
+
+
+
 		img {
 			max-width: 100%;
 			height: auto;
@@ -230,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
 #pin_show {
 	.panel-heading {
 		padding: 0;
+		
 	}
 	.pin_image {
 		img {
@@ -241,6 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.panel-body {
 		padding: 35px;
+		background-color: #252525;
 		h1 {
 			margin: 0 0 10px 0;
 		}
@@ -271,4 +277,44 @@ textarea {
 
 .panel{
 	box-shadow: 2px 2px 5px #999;
+}
+
+body.homepage {
+ background-color: #252525;
+}
+
+
+.letra{
+	color: #F8F8F8;
+	font-size: 200%;
+	font-weight: 900;
+	text-shadow: -3px -3px 3px #676663;
+}
+
+
+.letra1{
+	color: #656F77;
+	font-size: 200%;
+	font-weight: 900;
+		text-transform: uppercase;
+
+}
+
+.oscuro{
+	background-color:  black;
+}
+
+
+.letra2{
+	color: #656F77;
+	font-size: 500%;
+	font-weight: 900;
+	text-align: right;
+}
+
+.letra3{
+	color: #656F77;
+	font-size: 20%;
+	font-weight: 900;
+	text-align: left;
 }

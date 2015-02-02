@@ -1,14 +1,18 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>ForumSena</title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
+	
 	<%= csrf_meta_tags %>
 	<link rel="stylesheet" href="<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
 </head>
-<body>
+<body class="<%= @home_page ? 'homepage' : ''%>">
 
 
 	<div class="main_header clear_fix">
@@ -24,11 +28,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>
-					<%= link_to "Comunidad Sena", root_path, class: 'navbar-brand'%>
+					</button >
+					<div>
+						
+					<%= link_to "Comunidad Sena", root_path, class: 'navbar-brand letra1'%>
+					</div>
 
 				</div>
-
+				
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -55,7 +62,10 @@
 
 
 	</div>
-	
+
+ 
+
+
 	<div class="container invisible">
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
@@ -67,8 +77,19 @@
 		<%= yield%>
 	</div>
 </body>
+
+
 </html>
 
 
 
+<!-- llevar el js a un archivo externo -->
+
+<script>
+	$('.c').mouseenter(function(){
+    if($(this).hasClass('cycling')==false){ 
+        $(this).charcycle({'target':'#text'});  
+    }
+  });
+</script>
 
