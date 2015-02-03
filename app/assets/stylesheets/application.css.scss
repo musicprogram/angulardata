@@ -22,7 +22,7 @@
 
 body{
 	font-family: 'Ubuntu', sans-serif;
-	background: #EDEFF0;
+	background: #e6e6e6;
 }
 
 .wrapper {
@@ -296,7 +296,17 @@ body.homepage {
 	color: #656F77;
 	font-size: 200%;
 	font-weight: 900;
-		text-transform: uppercase;
+	text-shadow: 0 1px 0 #bbb,
+              0 2px 0 #bbb,
+              0 3px 0 #aaa,
+              0 4px 0 #aaa,
+              0 5px 0 #999,
+              0 6px 1px #000,
+              0 0px 3px #000,
+              0 1px 3px #000,
+              0 3px 5px #000,
+              0 5px 10px #000,
+              0 5px 20px #000;
 
 }
 
@@ -307,14 +317,15 @@ body.homepage {
 
 .letra2{
 	color: #656F77;
-	font-size: 500%;
+	font-size: 300%;
 	font-weight: 900;
 	text-align: right;
 }
 
 .letra3{
 	color: #656F77;
-	font-size: 20%;
+	font-size: 80%;
 	font-weight: 900;
 	text-align: left;
 }
+
