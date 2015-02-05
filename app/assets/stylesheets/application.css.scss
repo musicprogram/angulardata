@@ -10,12 +10,19 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+
  *= require 'masonry/transitions'
+ *= normalize
+ *= style
+ *= demo
  *= require_tree .
  *= require_self
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+
 
 
 
@@ -328,4 +335,10 @@ body.homepage {
 	font-weight: 900;
 	text-align: left;
 }
+
+
+a:hover{
+background-color: transparent;
+}
+
 

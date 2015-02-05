@@ -1,17 +1,31 @@
 <%= javascript_include_tag 'application', 'lazyYT' => true %>
-<%= stylesheet_link_tag    'application', media: 'all', 'lazyYT' => true %>
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<%= stylesheet_link_tag    'application', media: 'all', 'lazyYT' => true %>   
+<%= stylesheet_link_tag    'application', media: 'all', 'demo' => true %>
+<%= stylesheet_link_tag    'application', media: 'all', 'normalize' => true %>
+<%= stylesheet_link_tag    'application', media: 'all', 'style' => true %>
 <br>
 <br>
+
+
+<!--  
+
+
 <div class="homepage1">
+
+
             <div class="container1">
-            
+
+                       
             <div class="grid">
               
               <div class="item odd">
                 <div class="js-lazyYT" data-youtube-id="_oEA18Y8gM0"></div>
               </div>
               <div class="item even">
-                <div class="js-lazyYT" data-youtube-id="tuMgJrFoAFY">Cargando Vídeos...</div>
+                <div class="js-lazyYT " data-youtube-id="tuMgJrFoAFY" > </div>
               </div>
               <div class="item odd">
                 <div class="js-lazyYT" data-youtube-id="HLEAA_tIpbY"></div>
@@ -42,6 +56,27 @@
             </div>
      
    
+</div> -->
+
+
+<section class="main">
+
+  <div class="switch demo4">
+    <input type="checkbox">
+    <label><br><i class="fa fa-users fa-2x"></i>
+    </i></label>
+  </div>
+
+  <div class="switch demo4">
+    <input type="checkbox" checked>
+    <label ><br><i class="fa fa-user fa-2x" id="icono"></i>
+    </i></label>
+  </div>
+
+</section>
+
+
 </div>
-</div>
-<%= javascript_include_tag 'application', 'index' => true %>
+<%= javascript_include_tag 'application', 'index' => true %>  
+
+<%= javascript_include_tag 'application', 'modernizr' => true %> 

@@ -50,3 +50,4 @@ gem 'bootstrap-sass', '~> 3.3.3'
 gem "paperclip", "~> 4.2"
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'font-awesome-rails', '~> 4.3.0.0'
