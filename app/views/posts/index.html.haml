@@ -3,11 +3,14 @@
 		.post.c
 			%h2.title= link_to post.title, post
 			%p.date  
-				Published at
+				Publicado hace 
 				= time_ago_in_words(post.created_at)
-				by
+				por
 				= post.user.email
-
+				.com.pull-right
+					Comentarios
+					%span.badge
+						%a= link_to post.comments.count, post
 
 
 

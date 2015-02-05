@@ -1,23 +1,24 @@
 #posts_content
 	%h1= @post.title
-	%p= @post.content
-	%br/
-	%br/
+	.jumbotron
+		%p.post_content= @post.content
+	%p.des Por 
+	%p.des= @post.user.email
+	%p.des hace
+	%p.des= time_ago_in_words(@post.created_at)
+
 	#comments
-		%h2
-		= @post.comments.count 
+		Comentarios
+		%span.badge= @post.comments.count
 		
 		= render @post.comments
 
 		
 		= render "comments/form"
 		
-
-	%br/
 	%hr/
-	%br/
 	
-	= link_to "Back", posts_path(@post), class: "button"
+	= link_to "Atras", posts_path(@post), class: "button"
 //  botonones para eliminar y editar los comentarios
 //	= link_to "Edit", edit_post_path(@post), class: "button"
 //	= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure want to do this?"}, class: "button"
