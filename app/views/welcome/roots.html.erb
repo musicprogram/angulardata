@@ -1,0 +1,29 @@
+
+
+
+<%= stylesheet_link_tag    'application', media: 'all', 'demo' => true %>
+<%= stylesheet_link_tag    'application', media: 'all', 'normalize' => true %>
+<%= stylesheet_link_tag    'application', media: 'all', 'style' => true %>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<section class="main">
+<%= link_to "
+  <div class='switch demo4'>
+    <input type='checkbox'>
+    <label><br><i class='fa fa-user fa-2x'> </i> </label>
+  </div>".html_safe, new_user_session_path%>
+   
+
+  
+    <%= link_to "<div class='switch demo4'>
+    <input type='checkbox'>
+    <label ><br><i class='fa fa-user-plus fa-2x' id='icono'></i>
+    </i></label></div>".html_safe, new_user_registration_path%>
+  
+
+</section>
