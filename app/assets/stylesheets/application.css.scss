@@ -360,3 +360,69 @@ background-color: transparent;
 	 position: relative; 
      right: -80px;
 }
+
+
+
+/* parallax sign up */
+
+ 
+    .bodycuerpo {
+        background-color: #444;
+        background: url(http://i59.tinypic.com/i3up92.png);
+        
+    }
+    .form-signin input[type="text"] {
+        margin-bottom: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .form-signin .form-control {
+        position: relative;
+        font-size: 16px;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        height: auto;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .vertical-offset-100 {
+        padding-top: 100px;
+    }
+    .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    }
+    .panel1 {
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, .5); 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+    .letraformulario{
+    	color: white;
+    	font-size: 150%;
+    }
+
+    .botonpersonalizado{
+    	  background: #2A2926;
+		  border-color: #2A2926;
+		  box-shadow: 0 1px 1px #2A2926, inset 0 1px 0 #fbfbfb;
+		  color: white;
+    	  font-size: 150%;
+		  text-shadow: 0 1px 0 #fff;
+		  color: white;
+    	  font-size: 150%;
+    }
+
+   
