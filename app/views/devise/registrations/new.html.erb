@@ -6,70 +6,54 @@
 
 
 <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
-        <div class="bodycuerpo">
-            <div class="container">
-                <div class="row vertical-offset-100">
-                    <div class="col-md-4 col-md-offset-4">
-                        <div class="panel1 panel-default">
-                            <div class="panel-heading">                                
-                                <div class="row-fluid user-row"> 
-                                    
-                                    <p><%= image_tag("logo.png", :class => 'img-responsive') %></p>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                               <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-                              <%= f.error_notification %>
+<div class="bodycuerpo">
+  <div class="container">
+    <div class="row vertical-offset-100">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="panel1 panel-default">
+          <div class="panel-heading">                                
+            <div class="row-fluid user-row"> 
 
-                                <form accept-charset="UTF-8" role="form" class="form-signin">
-                                    <fieldset class="letraformulario">
-
-                                         <div class="form-group">
-                                            <%= f.input :email, required: true, autofocus: true, input_html: { class: 'form-control' } %>
-                                          </div>
-                                          <div class="form-group">
-                                            <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), input_html: { class: 'form-control letraformulario' } %>
-                                          </div>
-                                          <div class="form-group">
-                                            <%= f.input :password_confirmation, required: true, input_html: { class: 'form-control' } %>
-                                          </div>
-                                        <div class="form-actions">
-                                          <%= f.button :submit, "Sign up", class: "btn btn-lg btn-info btn-block botonpersonalizado" %>
-                                          <% end %>
-                                          <hr>
-                                          <hr>
-                                         <%= render "devise/shared/links"  %>
-
-                                                                                
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <p><%= image_tag("logo.png", :class => 'img-responsive') %></p>
             </div>
+          </div>
+          <div class="panel-body">
+           <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+           <%= f.error_notification %>
 
+           <form accept-charset="UTF-8" role="form" class="form-signin">
+            <fieldset class="letraformulario">
 
-     
-        
-        </div>
+             <div class="form-group">
+              <%= f.input :email, required: true, autofocus: true, input_html: { class: 'form-control' } %>
             </div>
+            <div class="form-group">
+              <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), input_html: { class: 'form-control letraformulario1' } %>
+            </div>
+            <div class="form-group">
+              <%= f.input :password_confirmation, required: true, input_html: { class: 'form-control' } %>
+            </div>
+            <div class="form-actions">
+              <%= f.button :submit, "Sign up", class: "btn btn-lg btn-info btn-block botonpersonalizado" %>
+              <% end %>
+              <hr>
+              <hr>
+              <%= render "devise/shared/links"  %>
 
 
-            <script>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
-$(document).ready(function() {
-    $(document).mousemove(function(event) {
-        TweenLite.to($(".bodycuerpo"), 
-        .5, {
-            css: {
-                backgroundPosition: "" + parseInt(event.pageX / 8) + "px " + parseInt(event.pageY / '12') + "px, " + parseInt(event.pageX / '15') + "px " + parseInt(event.pageY / '15') + "px, " + parseInt(event.pageX / '30') + "px " + parseInt(event.pageY / '30') + "px",
-              "background-position": parseInt(event.pageX / 8) + "px " + parseInt(event.pageY / 12) + "px, " + parseInt(event.pageX / 15) + "px " + parseInt(event.pageY / 15) + "px, " + parseInt(event.pageX / 30) + "px " + parseInt(event.pageY / 30) + "px"
-            }
-        })
-    })
-})
 
-            </script>
+
+</div>
+</div>
+
+<%= javascript_include_tag 'application', 'logueo' => true %> 
