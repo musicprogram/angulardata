@@ -27,6 +27,7 @@
              <div class="form-group">
               <%= f.input :email, required: true, autofocus: true, input_html: { class: 'form-control' } %>
             </div>
+            
             <div class="form-group">
               <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), input_html: { class: 'form-control letraformulario1' } %>
             </div>
@@ -57,3 +58,4 @@
 </div>
 
 <%= javascript_include_tag 'application', 'logueo' => true %> 
+
