@@ -12,14 +12,14 @@
  *
 
  *= require 'masonry/transitions'
- *= normalize
- *= style
- *= demo
- *= require_tree .
- *= require_self
+
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "demo";
+@import "style";
+@import "normalize";
+@import "lazyYT";
 
 
 
