@@ -1,0 +1,53 @@
+
+	
+	
+	<div id="posts_content">
+  <h1>
+    <%= @post.title %>
+  </h1>
+  <div class="jumbotron">
+    <p class="post_content">
+      <%= @post.content %>
+    </p>
+  </div>
+  <p class="des">Por </p>
+  <p class="des">
+    <%= @post.user.email %>
+  </p>
+  <p class="des">hace</p>
+  <p class="des">
+    <%= time_ago_in_words(@post.created_at) %>
+  </p>
+  
+  <div class="row">
+  <div class="btn-group pull-right">
+    <%= link_to like_post_path(@post), method: :put, class: "btn btn-default" do %>
+      <i class="fa fa-thumbs-o-up"></i>
+      <%= @post.get_upvotes.size %>
+    <% end %>
+    <%= link_to unlike_post_path(@post), method: :put, class: "btn btn-default" do %>
+      <i class="fa fa-thumbs-o-down"></i>
+      <%= @post.get_downvotes.size %>
+    <% end %>
+  </div>
+</div>
+
+  
+  
+  <div id="comments">
+    Comentarios
+    <span class="badge">
+      <%= @post.comments.count %>
+    </span>
+    <%= render @post.comments %>
+    <%= render "comments/form" %>
+  </div>
+  <hr/>
+  <%= link_to "Atras", posts_path(@post), class: "button" %>
+</div>
+<!--/  botonones para eliminar y editar los comentarios
+-->
+<!--/	= link_to "Edit", edit_post_path(@post), class: "button"
+-->
+<!--/	= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure want to do this?"}, class: "button"
+-->

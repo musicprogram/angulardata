@@ -14,12 +14,18 @@ devise_for :users
   end
   
   resources :posts do
+    member do
+  	put "like", to: "posts#upvote"
+  	put "unlike", to: "posts#downvote"
+    end
   resources :comments
+  
   end
   
   resources :pins do
   	member do
   	put "like", to: "pins#upvote"
+  	put "unlike", to: "pins#downvote"
     end
   end
 
