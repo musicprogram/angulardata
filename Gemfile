@@ -54,3 +54,5 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 
 gem 'activeadmin', github:
 'gregbell/active_admin'
+
+gem 'active_skin'
