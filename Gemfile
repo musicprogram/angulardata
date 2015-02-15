@@ -56,3 +56,6 @@ gem 'activeadmin', github:
 'gregbell/active_admin'
 
 gem 'active_skin'
+
+gem 'yt', '~> 0.13.7'
+gem 'autoprefixer-rails'

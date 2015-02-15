@@ -33,7 +33,7 @@ devise_for :users
 
 
   #root 'welcome#roots'
-  
+  resources :videos, only: [:index, :new, :create]
   
 
 end
