@@ -20,7 +20,7 @@
 @import "style";
 @import "normalize";
 @import "lazyYT";
-
+@import "cosmotheme";
 
 
 
@@ -144,14 +144,18 @@ body{
 			.comment_content {
 				margin: 0;
 				padding: 0;
-				font-size:15px;
+				color:#606060;
+				font-size:18px;
+				font-weight: bold;
 			}
 			.comment_author {
 				color: #397CAC;
 				margin-bottom:-50px;
 				display: inline-block;
-				font-weight: 400;
-				font-size:13px;
+			
+				font-size:15px;
+				font-weight: bold;
+
 			}
 		}
 		input[type="submit"] {
