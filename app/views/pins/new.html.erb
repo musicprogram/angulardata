@@ -1,6 +1,29 @@
-<div class="col-md-6 col-md-offset-3">
-	
-<div class="row">
+<div class="jumbotron">
+	<div class="container">
+		<h1>Hola, Aprendiz!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio blanditiis, voluptate aperiam natus consequatur eveniet rerum earum sit!</p>
+		<p>
+			<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>New Pin</a>
+
+		</p>
+	</div>
+</div>
+
+
+
+<div class="modal fade" id="modal-id">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<i class="fa fa-picture-o fa-2x"></i>
+			</div>
+			<div class="modal-body">
+
+
+
+
+
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h1 class="letra1">New Pin</h1>
@@ -10,7 +33,27 @@
 			<%= render 'form' %>
 		</div>
 	</div>
-</div>
+
+
+
 
 </div>
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script>
+$(document).ready(function() {
+	$('#modal').modal(options)
+});
+</script>
+
+
+
+
+
+
+
 

@@ -140,3 +140,22 @@
     0 -2px 5px rgba(255,255,255,0.05),
     0 2px 5px rgba(255,255,255,0.1);
 }
+
+
+.modal-body{
+  background-color: #515151;
+}
+
+.colores{
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;
+  box-shadow: 18px 11px 42px -32px rgba(0,0,0,0.5);
+}
+
+
+.btn-primary{
+    background-color: #3D3D3D;
+     border-color: black;
+
+}
+

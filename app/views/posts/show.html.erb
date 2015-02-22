@@ -10,13 +10,13 @@
       <%= @post.content %>
     </p>
   </div>
-  <p class="des">Por </p>
+  <p class="des">By </p>
   <p class="des">
     <%= @post.user.email %>
   </p>
-  <p class="des">hace</p>
+  <br>
   <p class="des">
-    <%= time_ago_in_words(@post.created_at) %>
+    <%= time_ago_in_words(@post.created_at) %> ago
   </p>
   
   <div class="row">
@@ -32,16 +32,70 @@
   </div>
 </div>
 
-  
-  
-  <div id="comments">
-    Comentarios
+
+ Comentarios
     <span class="badge">
       <%= @post.comments.count %>
     </span>
-    <%= render @post.comments %>
+  
+  
+ <br><br>
+  <%= render @post.comments %>
+<hr>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Add your opinion</h1>
+     <p>
+      <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Add comments</a>
+
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="modal-id">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+         <div id="comments">
+   
+  
     <%= render "comments/form" %>
   </div>
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+ <script>
+$(document).ready(function() {
+  $('#modal').modal(options)
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
   <hr/>
   <%= link_to "Atras", posts_path(@post), class:'btn btn-default btn' %>
 </div>
