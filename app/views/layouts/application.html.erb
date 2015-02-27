@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +11,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
-<body class="<%= @home_page ? 'homepage' : ''%>">
-
+<% if @home_page == true  %>
+<body class="homepagee">
+<% elsif @home_pagee == true %>
+<body class="homepages">
+<% else %>
+<body>
+<% end %>
 	<% if user_signed_in? %>
 	<div class="main_header clear_fix">
 
