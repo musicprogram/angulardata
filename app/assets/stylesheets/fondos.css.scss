@@ -1,0 +1,34 @@
+.homepagee{
+	background: asset_url('download.jpg');
+    width:100%;
+	height:960px;
+	background-size:cover;
+	background-position:center;
+}
+
+.homepages{
+   height: 100px;
+   background-color: white;
+   background-image:
+    linear-gradient(
+      to right, 
+      #EDEDED,
+      #EDEDED 15%,
+      #333333 15%,
+      #333333 85%,
+      #EDEDED 85%
+    );
+}
+
+.homepages1{
+   background: asset_url('fondo1.jpg');
+    width:100%;
+  height:960px;
+  background-size:cover;
+  background-position:center;
+
+
+   }
+
+
+
