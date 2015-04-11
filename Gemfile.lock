@@ -151,6 +151,8 @@ GEM
       mime-types
     polyamorous (1.1.0)
       activerecord (>= 3.0)
+    protected_attributes (1.0.9)
+      activemodel (>= 4.0.1, < 5.0)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -249,6 +251,7 @@ DEPENDENCIES
   jquery-rails
   masonry-rails (~> 0.2.4)
   paperclip (~> 4.2)
+  protected_attributes
   rails (= 4.2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

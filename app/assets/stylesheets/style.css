@@ -14,7 +14,7 @@
 }
 
 .switch {
-  margin: 50px auto;
+  margin: 250px auto;
   position: relative;
 }
 
@@ -43,8 +43,8 @@
 /* DEMO 4 */
 
 .switch.demo4 {
-  width: 225px;
-  height: 225px;
+  width: 310px;
+  height: 310px;
 }
 
 .switch.demo4 label {
