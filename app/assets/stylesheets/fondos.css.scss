@@ -21,14 +21,23 @@
 }
 
 .homepages1{
-   background: asset_url('fondo1.jpg');
-    width:100%;
-  height:960px;
-  background-size:cover;
-  background-position:center;
-
+      background: asset_url('fondo1.jpg');
+      width:100%;
+      height:960px;
+      background-size:cover;
+      background-position:center;
 
    }
+
+.homepagenew{
+      background: asset_url('fondonew.png');
+      width:100%;
+      height:960px;
+      background-size:cover;
+      background-position:center;
+
+   }
+
 
 
 

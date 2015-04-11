@@ -2,11 +2,14 @@
 	.content
 		%hr/
 		By
-		%p.letracorreo.comment_author= comment.user.email
+		%p.letracorreo.comment_author= comment.user.name_profile
 		.alert.alert-dismissable.alert-info.colores
 			%p.letracomentario.comment_content= comment.comment
-			%p.comment_author Hace
-			%p.comment_author= time_ago_in_words(comment.created_at)
+			
+	
+	.cometario
+		%p.comment_author Hace
+		%p.comment_author= time_ago_in_words(comment.created_at)
 	.buttons
 	//	= link_to "Edit", edit_post_comment_path(comment.post, comment)
 	//	= link_to "Delete",[comment.post, comment], method: :delete, data: { confirm:"Are you Sure?" }

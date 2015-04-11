@@ -1,8 +1,5 @@
-<br>
-<br>
-<br>
-<br>
-
+<body class="homepage">
+  
 
 
 <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
@@ -11,10 +8,10 @@
     <div class="row vertical-offset-100">
      <div class="col-md-12">
        
-       <div class="col-md-3">
+       <div class="col-md-2">
          
        </div>
-       <div class="col-md-6">
+       <div class="col-md-8">
           
         <div class="panel1 panel-default1 container11">
           <div class="panel-heading1 cabeza">                                
@@ -46,14 +43,15 @@
             
             
             <div class="form-group">
+             
               <%= f.input :email, required: true, autofocus: true, input_html: { class: 'form-control' } %>
             </div>
             
             <div class="form-group">
-              <%= f.input :password, autocomplete: "off", input_html: { class: 'form-control ' } %>
+              <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable), input_html: { class: 'form-control ' } %>
             </div>
             <div class="form-group">
-              <%= f.input :password_confirmation, autocomplete: "off", input_html: { class: 'form-control' } %>
+              <%= f.input :password_confirmation, required: true, input_html: { class: 'form-control' } %>
             </div>
             
             
@@ -76,7 +74,7 @@
     </div>
  
        </div>
-       <div class="col-md-3">
+       <div class="col-md-2">
          
        </div>
        
@@ -92,3 +90,5 @@
 
 <%= javascript_include_tag 'application', 'logueo' => true %> 
 
+
+</body>
